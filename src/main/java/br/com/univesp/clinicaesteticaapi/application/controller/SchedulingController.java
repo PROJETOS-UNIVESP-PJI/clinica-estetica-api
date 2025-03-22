@@ -19,7 +19,7 @@ public class SchedulingController {
     private final SchedulingService schedulingService;
 
     @PostMapping
-    public ResponseEntity<SchedulingResponse> saveScheduling(@RequestBody @Valid SchedulingRequest schedulingRequest) throws Exception {
+    public ResponseEntity<SchedulingResponse> saveScheduling(@RequestBody @Valid SchedulingRequest schedulingRequest) {
         return ResponseEntity.ok(schedulingService.saveScheduling(schedulingRequest));
     }
 

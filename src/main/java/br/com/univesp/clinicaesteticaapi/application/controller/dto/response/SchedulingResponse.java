@@ -13,7 +13,6 @@ public record SchedulingResponse(
         String phone,
         ServiceType serviceType,
         ProcedureType procedureType,
-        @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
         LocalDate scheduleDateTime,
         String scheduleHours,
         String message

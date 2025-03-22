@@ -8,8 +8,8 @@ import br.com.univesp.clinicaesteticaapi.mapper.SchedulingMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-@RequiredArgsConstructor
 @Service
+@RequiredArgsConstructor
 public class SchedulingService {
 
     private final SchedulingRepository schedulingRepository;
