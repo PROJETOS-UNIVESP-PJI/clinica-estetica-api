@@ -16,4 +16,6 @@ public interface SchedulingMapper {
     SchedulingResponse toSchedulingResponse(Scheduling scheduling);
 
     List<SchedulingHoursResponse> toSchedulingHoursResponseList(List<SchedulingHoursResponse> scheduleHoursByScheduleDateTime);
+
+    List<SchedulingResponse> toSchedulingResponseList(List<SchedulingResponse> schedulingByScheduleDateTime);
 }

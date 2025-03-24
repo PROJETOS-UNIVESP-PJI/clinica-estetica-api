@@ -29,4 +29,9 @@ public class SchedulingService {
         return schedulingMapper.toSchedulingHoursResponseList(
                 schedulingRepository.findScheduleHoursByScheduleDateTime(scheduleDateTime));
     }
+
+    public List<SchedulingResponse> getSchedulingByDate(LocalDate scheduleDateTime) {
+        return schedulingMapper.toSchedulingResponseList(
+                schedulingRepository.findSchedulingByScheduleDateTime(scheduleDateTime));
+    }
 }

@@ -24,6 +24,11 @@ public class SchedulingController {
         return ResponseEntity.ok(schedulingService.saveScheduling(schedulingRequest));
     }
 
+    @GetMapping("/{scheduleDateTime}")
+    public ResponseEntity<List<SchedulingResponse>> getSchedulingByDate(@PathVariable LocalDate scheduleDateTime) {
+        return ResponseEntity.ok(schedulingService.getSchedulingByDate(scheduleDateTime));
+    }
+
     @GetMapping("/hours/{scheduleDateTime}")
     public ResponseEntity<List<SchedulingHoursResponse>> getScheduleHoursByDate(@PathVariable LocalDate scheduleDateTime) {
         return ResponseEntity.ok(schedulingService.getScheduleHoursByDate(scheduleDateTime));

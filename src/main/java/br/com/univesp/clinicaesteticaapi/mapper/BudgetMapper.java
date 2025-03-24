@@ -12,6 +12,4 @@ public interface BudgetMapper {
 
     BudgetResponse toBudgetResponse(Budget budget);
 
-    BudgetRequest toBudgetRequest(Budget budget);
-
 }
