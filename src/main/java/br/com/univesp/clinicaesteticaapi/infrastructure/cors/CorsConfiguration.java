@@ -9,8 +9,8 @@ public class CorsConfiguration implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://127.0.0.1:4200", "http://localhost:4200", "https://pji-univesp-grp13.github.io",
-                        "http://pji-univesp-grp13.github.io")
+                .allowedOrigins("http://127.0.0.1:4200", "http://localhost:4200", "https://projetos-univesp-pji.github.io",
+                        "http://projetos-univesp-pji.github.io")
                 .allowedMethods("GET", "POST", "DELETE", "PUT");
     }
 }
